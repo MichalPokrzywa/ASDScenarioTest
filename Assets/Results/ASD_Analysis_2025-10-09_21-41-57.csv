@@ -1,0 +1,20 @@
+Metric,Value,Normal Range,Status
+Social Attention Ratio,0,179,>0.60,CONCERN
+Average Fixation Duration (ms),0,0,200-400,CONCERN
+Total Fixations,0,-,-
+Gaze Stability,0,1722,<0.05,CONCERN
+Blink Rate (per min),21,9,12-20,CONCERN
+Mean Saccade Amplitude,0,1627,-,-
+
+Audio Metrics
+F0 Variability,0,115,>0.60,CONCERN
+Prosody Score,0,173,>0.50,CONCERN
+Voice Quality,0,305,>0.70,CONCERN
+
+AOI Time Distribution
+Enviroment,82,1%
+Character,17,9%
+
+Overall Assessment
+ASD Risk Score,75,1/100
+Risk Level,High

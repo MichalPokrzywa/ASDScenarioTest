@@ -1,0 +1,25 @@
+Metric;Value;Normal Range;Status
+Social Attention Ratio;0,079;>0.60;CONCERN
+Average Fixation Duration (ms);180,5;200-400;CONCERN
+Total Fixations;22;-;-
+Gaze Stability;0,1046;<0.05;CONCERN
+Blink Rate (per min);36,0;12-20;CONCERN
+Mean Saccade Amplitude;0,1604;-;-
+
+Audio Metrics (normalized scores where applicable)
+F0 Variability (norm, 0..1);0,842;>0.60;OK
+Prosody Score (norm, 0..1);0,776;>0.50;OK
+Voice Quality (norm, 0..1);0,000;>0.70;CONCERN
+Raw meanF0 (Hz);185,4;-;-
+Raw sdF0 (Hz);42,08;-;-
+Raw jitter;0,07450;-;-
+Raw shimmer;0,21135;-;-
+Raw HNR (dB);-0,44;-;-
+
+AOI Time Distribution
+Enviroment;92,1%
+Character;7,9%
+
+Overall Assessment
+ASD Risk Score;63,9/100
+Risk Level;High

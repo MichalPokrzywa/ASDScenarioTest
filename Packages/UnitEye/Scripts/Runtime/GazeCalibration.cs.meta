@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 9badba6d1fceec941b2466982037c4ac
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - calibrationDot: {fileID: 2800000, guid: 5256747c2ede88a48b8744e26b8108bf, type: 3}
+  - path: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
