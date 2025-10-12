@@ -1,3 +1,4 @@
+Assets/IdaFaber/** binary
 /Assets/IdaFaber/Demo/TC_Belfast_Sunset_8k.hdr filter=lfs diff=lfs merge=lfs -text
 /Assets/IdaFaber/Demo/TC_Demo_01_2k.HDR filter=lfs diff=lfs merge=lfs -text
 /Assets/IdaFaber/Demo/TC_Demo_02_2k.HDR filter=lfs diff=lfs merge=lfs -text
