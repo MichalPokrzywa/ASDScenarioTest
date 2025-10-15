@@ -14,6 +14,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: TestName
   voicelines:
-  - voicelineName: TestName
-    description: 
-    audioClip: {fileID: 8300000, guid: 08242c52bc62a3540baada6cef05624b, type: 3}
+  - voicelineName: "Dzie\u0144 dobry, na jaki seans chcia\u0142by Pan kupi\u0107
+      bilet?"
+    audioClip: {fileID: 8300000, guid: bea9a5d43622c634cad04f222310c6a0, type: 3}
+  - voicelineName: "Dzie\u0144 dobry, na jaki seans chcia\u0142aby Pani kupi\u0107
+      bilet?"
+    audioClip: {fileID: 8300000, guid: bf23fe726fed4264399afcdafd50d3d2, type: 3}
+  - voicelineName: "Dzie\u0144 dobry, na kt\xF3ry film mamy wystawi\u0107 bilety?"
+    audioClip: {fileID: 8300000, guid: c294823134a892c44a5322fd542e5a7c, type: 3}
+  - voicelineName: "Niestety, na ten seans nie ma ju\u017C miejsc."
+    audioClip: {fileID: 8300000, guid: ac2a18705536ce742811800b6d1ac55d, type: 3}
+  - voicelineName: "Przykro mi, ten seans jest ju\u017C wyprzedany"
+    audioClip: {fileID: 8300000, guid: 60fa6c4fa3275ed40afbe658f3f44515, type: 3}
+  - voicelineName: "Mog\u0119 zaproponowa\u0107 alternatywy"
+    audioClip: {fileID: 8300000, guid: 14f8e60ad38f74f42857c15f8c2efded, type: 3}
+  - voicelineName: "Mog\u0119 zaproponowa\u0107 zamiast tego \u201EMagiczne Smoki\u201D
+      lub \u201EUkryte \u017Cycie zabawek\u201D"
+    audioClip: {fileID: 8300000, guid: 8a77de7da22f97049bfdff512e963147, type: 3}
+  - voicelineName: "Mamy wolne miejsca na \u201EMagiczne Smoki\u201D oraz na \u201EUkryte
+      \u017Cycie zabawek\u201D, kt\xF3ry bardziej odpowiada?"
+    audioClip: {fileID: 8300000, guid: 1f5780a4605666a43a1547f7131d19dd, type: 3}
+  - voicelineName: "Alternatywnie polecam \u201EMagiczne Smoki\u201D, ma bardzo dobre
+      recenzje i jeszcze s\u0105 miejsca."
+    audioClip: {fileID: 8300000, guid: 2f7585e23b161394a92c37442d65f6d5, type: 3}
+  - voicelineName: "Alternatywnie polecam \u201EUkryte \u017Cycie zabawek\u201D,
+      ma bardzo dobre recenzje i jeszcze s\u0105 miejsca."
+    audioClip: {fileID: 8300000, guid: ba28eaa131e6a9344bfa5863aaf908f5, type: 3}
+  - voicelineName: Dobrze czyli "Magiczne Smoki"
+    audioClip: {fileID: 8300000, guid: 2a2a3a5a75c111848833db01650360fe, type: 3}
+  - voicelineName: "Dobrze czyli \"Ukryte \u017Cycie zabawek\""
+    audioClip: {fileID: 8300000, guid: 757109cc27be6084eb87fdd712cf0647, type: 3}
+  - voicelineName: "Mamy promocj\u0119: popcorn + nap\xF3j w ni\u017Cszej cenie,
+      czy doliczy\u0107 do biletu?"
+    audioClip: {fileID: 8300000, guid: 00d56a5b44e6751488c25db3ba43bf14, type: 3}
+  - voicelineName: "Przypominam o promocji na nap\xF3j i popcorn, doda\u0107 do biletu?"
+    audioClip: {fileID: 8300000, guid: fbce414029ac3c34393631b55a8f09d4, type: 3}
+  - voicelineName: "Dodatkowo oferujemy popcorn i nap\xF3j w pakiecie promocyjnym,
+      doda\u0107 do zam\xF3wienia?"
+    audioClip: {fileID: 8300000, guid: c496a34ee8a2b204b980d33b5e939973, type: 3}
+  - voicelineName: "Czyli podsumowuj\u0105c: 1 bilet na seans oraz zestaw popcorn
+      + nap\xF3j, zgadza si\u0119?"
+    audioClip: {fileID: 8300000, guid: fa52bda44b7f0a248ae0683ec95dada5, type: 3}
+  - voicelineName: "Czyli podsumowuj\u0105c: 1 bilet na seans, zgadza si\u0119?"
+    audioClip: {fileID: 8300000, guid: f97f0c2fbc477d3418e8bf0b11482dd5, type: 3}
+  - voicelineName: "Bilety wystawione, zapraszam na sal\u0119 3. Mi\u0142ego ogl\u0105dania!"
+    audioClip: {fileID: 8300000, guid: 04197885512b8f74ca88e17995d9618b, type: 3}
+  - voicelineName: "Dzi\u0119kuj\u0119 za zakup, \u017Cycz\u0119 dobrej zabawy i
+      zapraszam ponownie!"
+    audioClip: {fileID: 8300000, guid: 34c329ebc74637742923f0f2458c2bfc, type: 3}
+  - voicelineName: Tak
+    audioClip: {fileID: 8300000, guid: e72f2a773d57506408eb05b68484cf3f, type: 3}
+  - voicelineName: Nie
+    audioClip: {fileID: 8300000, guid: 3d2e5fdb06c4f3144885339b016f4d52, type: 3}
+  - voicelineName: Dobrze
+    audioClip: {fileID: 8300000, guid: ecd299ccc3c734c43ab18868e09e24f2, type: 3}
+  - voicelineName: "Nie rozumiem, mo\u017Cesz powt\xF3rzy\u0107?"
+    audioClip: {fileID: 8300000, guid: 5c18304d65ffdd54b9fb5468dbe5e13d, type: 3}
