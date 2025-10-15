@@ -20,6 +20,14 @@ public class ScenarioManager : MonoBehaviour
     public TMP_Text drowsinessText;
     public TMP_Text calibrationText;
     public TMP_Text distanceText;
+
+    public void Start()
+    {
+        if (Display.displays.Length > 1)
+        {
+            Display.displays[1].Activate();
+        }
+    }
     public void Update()
     {
         blinkingText.text = gaze.Blinking ? "Eyes are closed" : "Eyes are open";

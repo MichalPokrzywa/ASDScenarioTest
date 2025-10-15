@@ -1,46 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
+#if UNITY_EDITOR
 using System.IO;
+using UnityEngine;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
-using UnityEngine;
 
-public class BuildPostProcessor : IPostprocessBuildWithReport
+public class BuildPostProcessor : IPreprocessBuildWithReport
 {
-    // order if multiple callbacks exist
     public int callbackOrder => 0;
-
-    public void OnPostprocessBuild(BuildReport report)
+    public void OnPreprocessBuild(BuildReport report)
     {
-        // source folder inside the project (change as needed)
-        string src = Path.Combine(Application.dataPath, "Praat"); // Assets/ExtraFiles
-
+        string src = Path.Combine(Application.dataPath, "Praat"); // Assets/Praat
         if (!Directory.Exists(src))
         {
             Debug.LogWarning($"BuildPostProcessor: source folder not found: {src}");
             return;
         }
 
-        // path to the built player (exe or package)
-        string buildExePath = report.summary.outputPath;                // e.g. /path/to/Builds/MyGame.exe
-        string buildRoot = Path.GetDirectoryName(buildExePath);        // parent folder
-
-        // destination next to the exe
-        string destRoot = Path.Combine(buildRoot, "Praat");
-
-        // copy into build root
-        FileUtil.CopyFileOrDirectory(src, destRoot);
-
-        // also copy into the Data folder for Standalone (some native libs/plugins expect files there)
-        string dataFolderName = Path.GetFileNameWithoutExtension(buildExePath) + "_Data";
+        string buildExePath = report.summary.outputPath; // path to .exe
+        string buildRoot = Path.GetDirectoryName(buildExePath);
+        string exeNameNoExt = Path.GetFileNameWithoutExtension(buildExePath);
+        string dataFolderName = exeNameNoExt + "_Data";
         string dataFolderPath = Path.Combine(buildRoot, dataFolderName);
-        if (Directory.Exists(dataFolderPath))
+
+        // 1) Copy to build root (next to exe). Some apps expect helpers next to the executable.
+        try
         {
-            string destInData = Path.Combine(dataFolderPath, "Praat");
-            FileUtil.CopyFileOrDirectory(src, destInData);
+            string destRoot = Path.Combine(buildRoot, "Praat");
+            if (Directory.Exists(destRoot)) Directory.Delete(destRoot, true);
+            FileUtil.CopyFileOrDirectory(src, destRoot);
+            Debug.Log($"BuildPostProcessor: copied {src} -> {destRoot}");
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"BuildPostProcessor: failed copying to build root: {e}");
         }
 
-        Debug.Log($"BuildPostProcessor: copied {src} -> {destRoot} (and to Data folder if present)");
+        // 2) Copy into the Data folder (create it if missing)
+        try
+        {
+            if (!Directory.Exists(dataFolderPath))
+                Directory.CreateDirectory(dataFolderPath);
+
+            string destInData = Path.Combine(dataFolderPath, "Praat");
+            if (Directory.Exists(destInData)) Directory.Delete(destInData, true);
+            FileUtil.CopyFileOrDirectory(src, destInData);
+            Debug.Log($"BuildPostProcessor: copied {src} -> {destInData}");
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"BuildPostProcessor: failed copying into Data folder: {e}");
+        }
     }
 }
+#endif
